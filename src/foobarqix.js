@@ -30,7 +30,15 @@ const FooBarQix = {
     },
 
     completeEachDigit : function(number){
-       return "";
+        let completeDigit = "";
+        number.split('').forEach(caract => {
+                this.defaultValue().forEach(defaultValueItem => {
+                if(caract == defaultValueItem[0]){
+                    completeDigit = completeDigit.concat('', defaultValueItem[1]);
+                } 
+            });
+        })
+        return completeDigit;
     },
 }
 
