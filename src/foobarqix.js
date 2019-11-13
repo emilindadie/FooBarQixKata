@@ -23,7 +23,10 @@ const FooBarQix = {
     },
 
     divisible : function(number){
-       return "";
+        const divisibleResult = this.defaultValue().map(item => {
+            return number % item[0] == 0 ? item[1] : ""; 
+        });
+        return this.containsFooBarQix(divisibleResult.join(''))? divisibleResult.join('') : number;
     },
 }
 
