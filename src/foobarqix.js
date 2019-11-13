@@ -40,6 +40,10 @@ const FooBarQix = {
         })
         return completeDigit;
     },
+
+    addSpecialCaracterForeach0 : function(string){
+        return "";
+    }
 }
 
 module.exports = FooBarQix;
