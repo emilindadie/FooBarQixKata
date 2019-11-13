@@ -21,6 +21,10 @@ const FooBarQix = {
         })
         return contains;
     },
+
+    divisible : function(number){
+       return "";
+    },
 }
 
 module.exports = FooBarQix;
