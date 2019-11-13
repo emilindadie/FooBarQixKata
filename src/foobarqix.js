@@ -43,7 +43,11 @@ const FooBarQix = {
 
     addSpecialCaracterForeach0 : function(string){
         return string.replace(new RegExp(0, 'g'), '*');
-    }
+    },
+
+    compute : function(number){
+        return "";
+    },
 }
 
 module.exports = FooBarQix;
