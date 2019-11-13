@@ -1,0 +1,22 @@
+{
+  "name": "foobarqixkata",
+  "version": "1.0.0",
+  "description": "foobarqix kata",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilindadie/FooBarQixKata.git"
+  },
+  "author": "emilinDadie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilindadie/FooBarQixKata/issues"
+  },
+  "homepage": "https://github.com/emilindadie/FooBarQixKata#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
