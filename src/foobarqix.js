@@ -28,6 +28,10 @@ const FooBarQix = {
         });
         return this.containsFooBarQix(divisibleResult.join(''))? divisibleResult.join('') : number;
     },
+
+    completeEachDigit : function(number){
+       return "";
+    },
 }
 
 module.exports = FooBarQix;
