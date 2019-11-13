@@ -42,7 +42,7 @@ const FooBarQix = {
     },
 
     addSpecialCaracterForeach0 : function(string){
-        return "";
+        return string.replace(new RegExp(0, 'g'), '*');
     }
 }
 
