@@ -1,11 +1,11 @@
-const CommonValue = require('../src/common_value');
+const Dictionary = require('./dictionary');
 
-const CompleteEachDigitRules = {
-    completeEachDigit : function(number){
-        const commonValue = Object.create(CommonValue);
+const MatchingCharacterRules = {
+    computeMatchingCharacterRule : function(number){
+        const dictionary = Object.create(Dictionary);
         let completeDigit = "";
         number.split('').forEach(caract => {
-                commonValue.defaultValue().forEach(defaultValueItem => {
+            dictionary.defaultValue().forEach(defaultValueItem => {
                 if(caract == defaultValueItem[0]){
                     completeDigit = completeDigit.concat('', defaultValueItem[1]);
                 }
@@ -15,4 +15,4 @@ const CompleteEachDigitRules = {
     },
 }
 
-module.exports = CompleteEachDigitRules;
+module.exports = MatchingCharacterRules;

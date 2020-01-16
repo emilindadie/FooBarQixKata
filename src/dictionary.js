@@ -1,4 +1,4 @@
-const CommonValue = {
+const Dictionary = {
     defaultValue : function (){
         return [
             ["3", "Foo"],
@@ -8,4 +8,4 @@ const CommonValue = {
     },
 }
 
-module.exports = CommonValue;
+module.exports = Dictionary;

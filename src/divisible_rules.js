@@ -1,10 +1,10 @@
-const CommonValue = require('../src/common_value');
+const Dictionary = require('./dictionary');
 
 const DivisibleRules = {
-    returnFooBarQixWhenNumberIsDivisibleBy357 : function(number){
-        const commonValue = Object.create(CommonValue);
+    computeDivisibleNumberRule : function(number){
+        const dictionary = Object.create(Dictionary);
         let divisibleByOne = false;
-        const divisibleResult = commonValue.defaultValue().map(item => {
+        const divisibleResult = dictionary.defaultValue().map(item => {
             if(number % item[0] == 0){
                 divisibleByOne = true;
                 return item[1];

@@ -1,6 +1,6 @@
 
 const SpecialCharacterRules = {
-    replaceZeroByStarCharacterWhenfoundZero : function(string){
+    computeSpecialCharacterRule : function(string){
         return string.replace(new RegExp(0, 'g'), '*');
     },
 }
